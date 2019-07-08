@@ -1,0 +1,34 @@
+{
+  "songs": [
+    {
+      "id": 3,
+      "title": "Mentías",
+      "author": "Karlos Rosé"
+    },
+    {
+      "id": 4,
+      "title": "Ven tú",
+      "author": "Domenic Marte"
+    },
+    {
+      "id": 6,
+      "title": "Te Odio",
+      "author": "Chelion"
+    },
+    {
+      "id": 9,
+      "title": "Carmín",
+      "author": "Romeo Santos"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Fuck off",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Ruben"
+  }
+}

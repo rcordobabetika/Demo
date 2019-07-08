@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'Gradle demo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+/*CUCUMBER*/
+    testImplementation 'io.cucumber:cucumber-java:4.3.1'
+/*REST-ASSURED*/
+    testImplementation 'io.rest-assured:rest-assured:4.0.0'
+/*JSON*/
+    implementation 'io.rest-assured:json-path:4.0.0'
+    testRuntimeOnly 'io.rest-assured:json-path:4.0.0'
+    testImplementation 'io.rest-assured:json-schema-validator:4.0.0'
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
