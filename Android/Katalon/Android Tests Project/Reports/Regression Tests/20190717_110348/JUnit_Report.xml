@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Regression Tests" time="41" tests="2" failures="0" errors="0">
+    <testsuite name="Regression Tests" tests="2" failures="0" errors="0" time="41" timestamp="2019-07-17 11:03:50" hostname="ruben - macbook-pro-de-ruben.local" id="Test Suites/Regression Tests">
+        <properties>
+            <property name="deviceName" value="Xiaomi Redmi 4A (Android 7.1.2)"/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/Reports/Regression Tests/20190717_110348"/>
+            <property name="logFiles" value="/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/Reports/Regression Tests/20190717_110348/execution0.log, /Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/Reports/Regression Tests/20190717_110348/appium.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="ruben - macbook-pro-de-ruben.local"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.2.1.2"/>
+            <property name="deviceOS" value="Android"/>
+            <property name="appiumVersion" value="1.14.0"/>
+            <property name="deviceModel" value="Redmi 4A"/>
+            <property name="hostAddress" value="169.254.237.136"/>
+            <property name="deviceManufacturer" value="Xiaomi"/>
+            <property name="deviceId" value="68b396e97d34"/>
+            <property name="deviceName" value="Xiaomi Redmi 4A (Android 7.1.2)"/>
+            <property name="deviceOSVersion" value="7.1.2"/>
+        </properties>
+        <testcase name="Test Cases/Verify Correct Alarm Message" classname="Test Cases/Verify Correct Alarm Message" status="PASSED">
+            <system-out>2019-07-17 11:03:51 - [TEST_CASE][PASSED] - Test Cases/Verify Correct Alarm Message: Test Cases/Verify Correct Alarm Message
+
+2019-07-17 11:03:51 - [TEST_STEP][PASSED] - comment("Story: Verify correct alarm message"): Story: Verify correct alarm message
+
+2019-07-17 11:03:51 - [MESSAGE][INFO] - Story: Verify correct alarm message
+
+2019-07-17 11:03:51 - [TEST_STEP][PASSED] - comment("Given that user has started an application"): Given that user has started an application
+
+2019-07-17 11:03:51 - [MESSAGE][INFO] - Given that user has started an application
+
+2019-07-17 11:03:51 - [TEST_STEP][PASSED] - appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir()): null
+
+2019-07-17 11:03:51 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started app at: '/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/androidapp/APIDemos.apk'
+
+2019-07-17 11:03:52 - [MESSAGE][INFO] - Appium server started on port 54.206
+
+2019-07-17 11:04:04 - [MESSAGE][PASSED] - Started app at: '/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/androidapp/APIDemos.apk'
+
+2019-07-17 11:04:04 - [TEST_STEP][PASSED] - comment("And he navigates the application to Activity form"): And he navigates the application to Activity form
+
+2019-07-17 11:04:04 - [MESSAGE][INFO] - And he navigates the application to Activity form
+
+2019-07-17 11:04:04 - [TEST_STEP][PASSED] - tap(findTestObject("Application/android.widget.TextView - App"), 10): Tapped on element 'Object Repository/Application/android.widget.TextView - App'
+
+2019-07-17 11:04:06 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/android.widget.TextView - App'
+
+2019-07-17 11:04:06 - [TEST_STEP][PASSED] - tap(findTestObject("Application/App/android.widget.TextView-Activity"), 10): Tapped on element 'Object Repository/Application/App/android.widget.TextView-Activity'
+
+2019-07-17 11:04:07 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/android.widget.TextView-Activity'
+
+2019-07-17 11:04:07 - [TEST_STEP][PASSED] - comment("When he taps on the Custom Dialog button"): When he taps on the Custom Dialog button
+
+2019-07-17 11:04:07 - [MESSAGE][INFO] - When he taps on the Custom Dialog button
+
+2019-07-17 11:04:07 - [TEST_STEP][PASSED] - tap(findTestObject("Application/App/Activity/android.widget.TextView-Custom Dialog"), 10): Tapped on element 'Object Repository/Application/App/Activity/android.widget.TextView-Custom Dialog'
+
+2019-07-17 11:04:09 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/Activity/android.widget.TextView-Custom Dialog'
+
+2019-07-17 11:04:09 - [TEST_STEP][PASSED] - message = getText(findTestObject("Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog"), 10): Text of element 'Object Repository/Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog' is: 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.'
+
+2019-07-17 11:04:09 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog' is: 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.'
+
+2019-07-17 11:04:09 - [TEST_STEP][PASSED] - comment("Then the correct dialog message should be displayed"): Then the correct dialog message should be displayed
+
+2019-07-17 11:04:09 - [MESSAGE][INFO] - Then the correct dialog message should be displayed
+
+2019-07-17 11:04:09 - [TEST_STEP][PASSED] - verifyEqual(message, "Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame."): Actual object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' and expected object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' are equal
+
+2019-07-17 11:04:09 - [MESSAGE][PASSED] - Actual object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' and expected object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' are equal
+
+2019-07-17 11:04:09 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2019-07-17 11:04:10 - [MESSAGE][PASSED] - Close app successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Verify Last Items In List" classname="Test Cases/Verify Last Items In List" status="PASSED">
+            <system-out>2019-07-17 11:04:10 - [TEST_CASE][PASSED] - Test Cases/Verify Last Items In List: Test Cases/Verify Last Items In List
+
+2019-07-17 11:04:10 - [TEST_STEP][PASSED] - comment("Story: Verify correct alarm message"): Story: Verify correct alarm message
+
+2019-07-17 11:04:10 - [MESSAGE][INFO] - Story: Verify correct alarm message
+
+2019-07-17 11:04:11 - [TEST_STEP][PASSED] - comment("Given that user has started an application"): Given that user has started an application
+
+2019-07-17 11:04:11 - [MESSAGE][INFO] - Given that user has started an application
+
+2019-07-17 11:04:11 - [TEST_STEP][PASSED] - appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir()): null
+
+2019-07-17 11:04:11 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started app at: '/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/androidapp/APIDemos.apk'
+
+2019-07-17 11:04:12 - [MESSAGE][INFO] - Appium server started on port 54.319
+
+2019-07-17 11:04:22 - [MESSAGE][PASSED] - Started app at: '/Users/ruben/Betika/Repositories/Demo/Android/Katalon/Android Tests Project.prj/androidapp/APIDemos.apk'
+
+2019-07-17 11:04:22 - [TEST_STEP][PASSED] - comment("And he navigates the application to Graphics form"): And he navigates the application to Graphics form
+
+2019-07-17 11:04:22 - [MESSAGE][INFO] - And he navigates the application to Graphics form
+
+2019-07-17 11:04:22 - [TEST_STEP][PASSED] - tap(findTestObject("Application/android.widget.TextView - Graphics"), G_Timeout): Tapped on element 'Object Repository/Application/android.widget.TextView - Graphics'
+
+2019-07-17 11:04:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/android.widget.TextView - Graphics'
+
+2019-07-17 11:04:24 - [TEST_STEP][PASSED] - comment("When he scroll to Xfermodes text"): When he scroll to Xfermodes text
+
+2019-07-17 11:04:24 - [MESSAGE][INFO] - When he scroll to Xfermodes text
+
+2019-07-17 11:04:24 - [TEST_STEP][PASSED] - scrollToText("Xfermodes"): Scrolling to text 'Xfermodes' successfully
+
+2019-07-17 11:04:31 - [MESSAGE][PASSED] - Scrolling to text 'Xfermodes' successfully
+
+2019-07-17 11:04:31 - [TEST_STEP][PASSED] - comment("Then the current screen should show Xfermodes text after scrolling"): Then the current screen should show Xfermodes text after scrolling
+
+2019-07-17 11:04:31 - [MESSAGE][INFO] - Then the current screen should show Xfermodes text after scrolling
+
+2019-07-17 11:04:31 - [TEST_STEP][PASSED] - itemText = getText(findTestObject("Application/Graphics/android.widget.TextView - Xfermodes"), G_Timeout): Text of element 'Object Repository/Application/Graphics/android.widget.TextView - Xfermodes' is: 'Xfermodes'
+
+2019-07-17 11:04:31 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/Graphics/android.widget.TextView - Xfermodes' is: 'Xfermodes'
+
+2019-07-17 11:04:31 - [TEST_STEP][PASSED] - verifyEqual(itemText, "Xfermodes"): Actual object 'Xfermodes' and expected object 'Xfermodes' are equal
+
+2019-07-17 11:04:31 - [MESSAGE][PASSED] - Actual object 'Xfermodes' and expected object 'Xfermodes' are equal
+
+2019-07-17 11:04:31 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2019-07-17 11:04:32 - [MESSAGE][PASSED] - Close app successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-07-17 11:03:50 - [TEST_SUITE][INCOMPLETE] - Regression Tests: null</system-out>
+        <system-err>2019-07-17 11:03:50 - [TEST_SUITE][INCOMPLETE] - Regression Tests: null</system-err>
+    </testsuite>
+</testsuites>

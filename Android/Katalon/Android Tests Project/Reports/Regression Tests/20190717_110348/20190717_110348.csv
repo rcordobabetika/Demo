@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Tests,,,,2019-07-17 11:03:50,2019-07-17 11:04:32,"41,769s",INCOMPLETE
+,,,,,,,
+Test Cases/Verify Correct Alarm Message,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2019-07-17 11:03:51,2019-07-17 11:04:10,"19,738s",PASSED
+"comment(""Story: Verify correct alarm message"")",,,,2019-07-17 11:03:51,2019-07-17 11:03:51,"0,133s",PASSED
+"comment(""Given that user has started an application"")",,,,2019-07-17 11:03:51,2019-07-17 11:03:51,"0,010s",PASSED
+"appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir())",,Get full directory's path of android application,,2019-07-17 11:03:51,2019-07-17 11:03:51,"0,149s",PASSED
+"startApplication(appPath, false)",,,,2019-07-17 11:03:51,2019-07-17 11:04:04,"12,476s",PASSED
+"comment(""And he navigates the application to Activity form"")",,,,2019-07-17 11:04:04,2019-07-17 11:04:04,"0,006s",PASSED
+"tap(findTestObject(""Application/android.widget.TextView - App""), 10)",,,,2019-07-17 11:04:04,2019-07-17 11:04:06,"2,100s",PASSED
+"tap(findTestObject(""Application/App/android.widget.TextView-Activity""), 10)",,,,2019-07-17 11:04:06,2019-07-17 11:04:07,"1,705s",PASSED
+"comment(""When he taps on the Custom Dialog button"")",,,,2019-07-17 11:04:07,2019-07-17 11:04:07,"0,002s",PASSED
+"tap(findTestObject(""Application/App/Activity/android.widget.TextView-Custom Dialog""), 10)",,,,2019-07-17 11:04:07,2019-07-17 11:04:09,"1,300s",PASSED
+"message = getText(findTestObject(""Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog""), 10)",,Get displayed message on the dialog,,2019-07-17 11:04:09,2019-07-17 11:04:09,"0,314s",PASSED
+"comment(""Then the correct dialog message should be displayed"")",,,,2019-07-17 11:04:09,2019-07-17 11:04:09,"0,003s",PASSED
+"verifyEqual(message, ""Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame."")",,,,2019-07-17 11:04:09,2019-07-17 11:04:09,"0,014s",PASSED
+closeApplication(),,,,2019-07-17 11:04:09,2019-07-17 11:04:10,"1,213s",PASSED
+,,,,,,,
+Test Cases/Verify Last Items In List,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Open the application and verify the items show full when the items over loading",,2019-07-17 11:04:10,2019-07-17 11:04:32,"21,664s",PASSED
+"comment(""Story: Verify correct alarm message"")",,,,2019-07-17 11:04:10,2019-07-17 11:04:11,"0,015s",PASSED
+"comment(""Given that user has started an application"")",,,,2019-07-17 11:04:11,2019-07-17 11:04:11,"0,013s",PASSED
+"appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir())",,Get full directory's path of android application,,2019-07-17 11:04:11,2019-07-17 11:04:11,"0,012s",PASSED
+"startApplication(appPath, false)",,,,2019-07-17 11:04:11,2019-07-17 11:04:22,"11,603s",PASSED
+"comment(""And he navigates the application to Graphics form"")",,,,2019-07-17 11:04:22,2019-07-17 11:04:22,"0,002s",PASSED
+"tap(findTestObject(""Application/android.widget.TextView - Graphics""), G_Timeout)",,,,2019-07-17 11:04:22,2019-07-17 11:04:24,"1,566s",PASSED
+"comment(""When he scroll to Xfermodes text"")",,,,2019-07-17 11:04:24,2019-07-17 11:04:24,"0,003s",PASSED
+"scrollToText(""Xfermodes"")",,,,2019-07-17 11:04:24,2019-07-17 11:04:31,"6,952s",PASSED
+"comment(""Then the current screen should show Xfermodes text after scrolling"")",,,,2019-07-17 11:04:31,2019-07-17 11:04:31,"0,002s",PASSED
+"itemText = getText(findTestObject(""Application/Graphics/android.widget.TextView - Xfermodes""), G_Timeout)",,Get item's label,,2019-07-17 11:04:31,2019-07-17 11:04:31,"0,213s",PASSED
+"verifyEqual(itemText, ""Xfermodes"")",,,,2019-07-17 11:04:31,2019-07-17 11:04:31,"0,012s",PASSED
+closeApplication(),,,,2019-07-17 11:04:31,2019-07-17 11:04:32,"1,117s",PASSED
